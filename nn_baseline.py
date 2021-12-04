@@ -21,7 +21,7 @@ def nn_model():
 
     model = keras.Sequential()
 
-    #model.add(keras.layers.Dense(1024, activation = "relu"))
+    model.add(keras.layers.Dense(1024, activation = "relu"))
 
     model.add(keras.layers.Dense(512, activation = "sigmoid"))
     
