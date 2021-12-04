@@ -23,15 +23,18 @@ def nn_model():
 
     model.add(tf.keras.layers.Dense(512, activation = tf.nn.elu,kernel_initializer="he_normal"))
 
+    model.add(tf.keras.layers.Dropout(0.18))
+
     model.add(tf.keras.layers.Dense(256, activation = tf.nn.elu, kernel_initializer="he_normal"))
+
+    model.add(tf.keras.layers.Dropout(0.1))
 
     model.add(tf.keras.layers.Dense(128, activation = tf.nn.elu, kernel_initializer="he_normal"))
 
+    model.add(tf.keras.layers.Dropout(0.1))
+
     model.add(tf.keras.layers.Dense(64, activation = tf.nn.elu, kernel_initializer="he_normal"))
-
-
-    model.add(tf.keras.layers.Dense(10, activation = tf.nn.softmax))
-
+    
     model.compile(optimizer = 'adam', 
                 loss = 'categorical_crossentropy',
                 metrics=['accuracy'])
@@ -52,8 +55,3 @@ def nn_model():
     evaluate.plot_confusion_matrix(cm, label,title='Confusion matrix')
 
 nn_model()
-
-
-
-
-
