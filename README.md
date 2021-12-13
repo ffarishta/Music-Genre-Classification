@@ -4,6 +4,6 @@ Using the GTZAN dataset from kaggle we would like to create a program the classi
 
 
 # Running Models 
-To run the model run the code(main.py) file inside the src folder
+To run the model run the main.py file inside the src folder
   * After running the code, there will be a command line interface in the terminal. Enter a number from 1-4 corresponding to the model you would like to run
-  * Additional files inside folder code(notebooks) directs to jypter notebooks correspoding to each model 
+  * Additional files inside folder notebooks directs to jypter notebooks correspoding to each model 
