@@ -42,7 +42,7 @@ def main():
                 logistic_regression.LR_final()
         
         else:
-            print("INVALID COMMAND! PLEASE TRY")
+            print("INVALID COMMAND! PLEASE TRY Again")
         
         print("\n")
             
