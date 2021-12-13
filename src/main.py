@@ -6,7 +6,7 @@ import logistic_regression
 
 def main():
     """
-    Main function will run a command line interface to implment the chosen classifiers  
+    Main function will run a command line interface to implement the chosen classifiers  
     """
     while(True):
         #choose 1 of 4 options 
@@ -19,6 +19,7 @@ def main():
         val = int(input("Select The model that you would like to run: "))
         if val == 4:
             break
+        
         reg = int(input("Enter 1 for baseline model or enter 2 for final model: "))
         
         # run each model given the input 
