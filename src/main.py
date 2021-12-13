@@ -27,7 +27,6 @@ def main():
             if reg == 1:
                 knn.KNN_baseline()
             if reg == 2:
-                print("hi")
                 knn.KNN_final()
 
         elif val == 3:
