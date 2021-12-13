@@ -58,10 +58,14 @@ def eval_mectrics(model,X_test,y_test,save=" ",history = None,argmax=True):
     else:
         preds = predictions
         label = y_test
+    p1 = preds
+    l1 = label
 
     cm = confusion_matrix(y_true=label,y_pred=preds)
     label = list(preprocess.get_labels())
     plot_confusion_matrix(cm, label,save=save,title='Confusion matrix')
+    
+    print(classification_report(l1,p1))
 
 def plot_acc_err(hist,save):
     plt.figure(figsize=(12, 6))
