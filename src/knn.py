@@ -37,7 +37,6 @@ def KNN_baseline():
     
     util.eval_mectrics(knn,X_test,y_test,save="CM_KNN_Baseline")
     
-#KNN_baseline()
 
 def KNN_final():
     """
@@ -69,5 +68,3 @@ def KNN_final():
     print('Accuracy on valid set: %.2f' % (acc_val*100))
     
     util.eval_mectrics(knn,X_test,y_test,save="CM_KNN_Final")
-
-#KNN_final()
