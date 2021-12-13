@@ -12,6 +12,6 @@ To run the model run the main.py file inside the src folder
 
  * Pandas
  * NumPy
- * sklean
+ * sklearn
  * TensorFlow
  * Matplotlib
