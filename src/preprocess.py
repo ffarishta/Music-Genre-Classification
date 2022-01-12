@@ -14,7 +14,7 @@ def load_data():
     path =  os.path.abspath(os.curdir)
     csv_path = os.path.join(path,"features_3_sec.csv")
     return pd.read_csv(csv_path)
-load_data()
+
 def get_labels():
     df = load_data()
     label = df['label'].unique()
